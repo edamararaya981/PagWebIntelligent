@@ -41,15 +41,16 @@
 
   <section class="contact">
     <h2>Contacto</h2>
-    <form action="contact.php" method="post">
+    <form id="myForm" action="mailto:edamaraya981@gmail.com?subject=Presupuesto" method="post" enctype="text/plain">
       <label for="name">Nombre:</label>
-      <input type="text" name="name" id="name">
+      <!-- action="contact.php" -->
+      <input type="text" class="form-control" name="name" id="name">
 
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email">
+      <input type="email" class="form-control" name="email" id="email">
 
       <label for="message">Mensaje:</label>
-      <textarea name="message" id="message"></textarea>
+      <textarea class="form-control" name="message" id="message"></textarea>
 
       <input type="submit" value="Enviar mensaje">
     </form>
